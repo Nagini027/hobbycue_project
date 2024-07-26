@@ -1,0 +1,11 @@
+.inputcontainer {
+  background-color: rgb(106, 4, 202);
+  border-top-right-radius: 5px;
+  height: 40px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+}
+.searchbar {
+  width: 38px;
+  color: white;
+}
