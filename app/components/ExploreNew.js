@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
-const Testimonials = () => {
+
+const ExploreNew = () => {
   return (
     <div class="p-5">
       <div class="card ">
@@ -29,39 +29,28 @@ const Testimonials = () => {
               activities in my city, all under one roof, is an excellent idea
               and I highly recommend it.
             </p>
-          </div>
-          {/*  */}
-          <div className="row">
-            <div className="col-12 col-md-7 ">
-              <div
-                className="w-100 w-md-100  position-relative"
-                style={{
-                  width: "680px",
-                  height: "80px",
-                }}
-              >
-                <Image src="/Audio Track.png" alt="audio track" layout="fill" />
-              </div>
-            </div>
 
-            <div className="col-12 col-md-5 mb-3 ">
-              <div className="">
-                <Image
-                  src="/Group 108.png"
-                  alt="Brand Logo"
-                  width={250}
-                  height={80}
-                  style={{ marginRight: "50px" }}
-                />
-              </div>
-              {/*  */}
+            <div className="d-flex justify-content-between">
+              <Image
+                src="/Audio Track.png"
+                alt="Brand Logo"
+                width={670}
+                height={90}
+                style={{}}
+              />
+              <Image
+                src="/Group 108.png"
+                alt="Brand Logo"
+                width={250}
+                height={90}
+                style={{ marginRight: "10px" }}
+              />
             </div>
           </div>
-          {/*  */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Testimonials;
+export default ExploreNew;

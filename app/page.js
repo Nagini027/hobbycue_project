@@ -12,6 +12,7 @@ import AddNew from "./components/AddNew";
 import Testimonials from "./components/Testimonials";
 
 import TabComponent from "./components/TabComponent";
+
 const HomePage = () => {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min");
@@ -19,30 +20,27 @@ const HomePage = () => {
   return (
     <>
       <section>
-        <div style={{ height: "678px" }}>
-          <div
-            className="d-flex flex-column flex-md-row justify-content-around pt-5"
-            style={{ height: "678px" }}
-          >
-            <span style={{ paddingTop: "80px" }} className="pt-md-5"></span>
-            <div style={{ Width: "400px", height: "578px" }}>
+        <div className="p-3">
+          <div style={{ paddingTop: "100px" }}></div>
+          <div className="row">
+            <div className="col-12 col-md-7 ">
               <Explore />
             </div>
 
-            <div>
-              <TabComponent />
+            <div className="col-12 col-md-5 mb-3">
+              <div className="card-body">
+                <TabComponent />
+              </div>
+              {/*  */}
             </div>
           </div>
         </div>
-        <div>
-          <Card />
-        </div>
-        <div>
-          <AddNew />
-        </div>
-        <div>
-          <Testimonials />
-        </div>
+
+        <Card />
+
+        <AddNew />
+
+        <Testimonials />
       </section>
     </>
   );
